@@ -9,50 +9,56 @@
 <body>
 
   <header class="header">
-    <img class="logo header__logo" src="http://placehold.it/150x100" alt="Интернет-магазин игрушек ручной работы">
+    <a class="header__logo-link">
+      <img class="logo header__logo" src="http://placehold.it/150x100" alt="Интернет-магазин игрушек ручной работы">
+    </a>
     <nav class="main-nav">
       <button class="menu-nav__toggle">Открыть меню</button>
       <ul class="main-nav__list">
         <li class="main-nav__item"><a href="catalog.html" class="main-nav__link">Каталог товаров</a></li>
         <li class="main-nav__item"><a href="form.html" class="main-nav__link">Вязание на заказ</a></li>
       </ul>
-      <form class="search" action="https://echo.htmlacademy.ru" method="get">
-        <input class="search__item" type="search" name="search">
-      </form>
-      <a href="#" class="basket">Корзина: пока пуста</a>
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <form class="search" action="https://echo.htmlacademy.ru" method="get">
+            <input class="search__item" type="search" name="search">
+          </form>
+        </li>
+        <li class="main-nav__item"><a href="#" class="main-nav__link basket">Корзина: пока пуста</a></li>
+      </ul>
     </nav>
   </header>
 
   <main class="main">
     <h1 class="main__title">Милые штуки ручной работы для дома</h1>
-    <section class="catalog-product">
+    <section class="catalog">
       <h2 class="visually-hidden">Каталог продукции</h2>
-      <a href="#" class="interior-items">Предметы интерьера</a>
-      <a href="#" class="kids-toys">Детские игрушки</a>
+      <a href="#" class="catalog__item interior-items">Предметы интерьера</a>
+      <a href="#" class="catalog__item kids-toys">Детские игрушки</a>
     </section>
     <section class="popular-products">
-      <h2 class="visually-hidden">Товары недели</h2>
-      <article class="product">
-        <h2 class="product__title">Вязаные корзинки</h2>
-        <p class="product__subtitle">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех
+      <h2 class="products__hot">Товары недели</h2>
+      <article class="product-hot">
+        <h2 class="product-hot__title">Вязаные корзинки</h2>
+        <p class="product-hot__subtitle">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех
           размерах.</p>
-        <img class="product__image" src="http://placehold.it/150x100" alt="Вязаные корзинки">
-        <table class="product-specifications">
-          <tr class="product-specifications__item">
-            <th class="product-specifications__property">Цвет:</th>
-            <td class="product-specifications__value">«Тиффани»/серый</td>
+        <img class="product-hot__image" src="http://placehold.it/150x100" alt="Вязаные корзинки">
+        <table class="product-hot__specifications">
+          <tr class="product-hot__specifications-item">
+            <th class="product-hot__specifications-property">Цвет:</th>
+            <td class="product-hot__specifications-value">«Тиффани»/серый</td>
           </tr>
-          <tr class="product-specifications__item">
-            <th class="product-specifications__property">Диаметр:</th>
-            <td class="product-specifications__value">25 см</td>
+          <tr class="product-hot__specifications-item">
+            <th class="product-hot__specifications-property">Диаметр:</th>
+            <td class="product-hot__specifications-value">25 см</td>
           </tr>
-          <tr class="product-specifications__item">
-            <th class="product-specifications__property">Высота:</th>
-            <td class="product-specifications__value">15 см</td>
+          <tr class="product-hot__specifications-item">
+            <th class="product-hot__specifications-property">Высота:</th>
+            <td class="product-hot__specifications-value">15 см</td>
           </tr>
         </table>
-        <p class="prodyct__price">Цена: 990 руб.</p>
-        <a href="#" class="product__link">Заказать</a>
+        <p class="product-hot__price">Цена: 990 руб.</p>
+        <a href="#" class="product-hot__link">Заказать</a>
       </article>
     </section>
     <section class="about-us">
