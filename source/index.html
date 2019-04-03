@@ -13,17 +13,14 @@
       <img class="logo header__logo" src="http://placehold.it/150x100" alt="Интернет-магазин игрушек ручной работы">
     </a>
     <nav class="main-nav">
-      <button class="menu-nav__toggle">Открыть меню</button>
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
       <ul class="main-nav__list">
         <li class="main-nav__item"><a href="catalog.html" class="main-nav__link">Каталог товаров</a></li>
         <li class="main-nav__item"><a href="form.html" class="main-nav__link">Вязание на заказ</a></li>
       </ul>
       <ul class="main-nav__list">
         <li class="main-nav__item">
-          <form class="search" action="https://echo.htmlacademy.ru" method="get">
-            <input class="search__item" type="search" name="search">
-          </form>
-        </li>
+          <a href="#" class="main-nav__link search"></a></li>
         <li class="main-nav__item"><a href="#" class="main-nav__link basket">Корзина: пока пуста</a></li>
       </ul>
     </nav>
@@ -37,9 +34,10 @@
       <a href="#" class="catalog__item kids-toys">Детские игрушки</a>
     </section>
     <section class="popular-products">
-      <h2 class="products__hot">Товары недели</h2>
+      <h2 class="visually-hidden">Товары недели</h2>
       <article class="product-hot">
         <h2 class="product-hot__title">Вязаные корзинки</h2>
+        <span class="product-hot__mark">Товар недели</span>
         <p class="product-hot__subtitle">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех
           размерах.</p>
         <img class="product-hot__image" src="http://placehold.it/150x100" alt="Вязаные корзинки">
@@ -131,7 +129,7 @@
         <input class="modal-form__input" type="checkbox" name="size-l" id="size-l">
         <label class="modal-form__label" for="size-m">l</label>
       </div>
-      <button class="form-modal__submit" type="submit">Добавить</button>
+      <button class="modal-form__submit" type="submit">Добавить</button>
     </form>
   </div>
 
