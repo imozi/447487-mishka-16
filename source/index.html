@@ -1,12 +1,137 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Мишка</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Мишка</title>
+</head>
 
-  </body>
+<body>
+
+  <header class="header">
+    <a class="header__logo-link">
+      <img class="logo header__logo" src="http://placehold.it/150x100" alt="Интернет-магазин игрушек ручной работы">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <ul class="main-nav__list">
+        <li class="main-nav__item"><a href="catalog.html" class="main-nav__link">Каталог товаров</a></li>
+        <li class="main-nav__item"><a href="form.html" class="main-nav__link">Вязание на заказ</a></li>
+      </ul>
+      <ul class="main-nav__list">
+        <li class="main-nav__item"><a href="#" class="main-nav__link search">Поиск по сайту</a></li>
+        <li class="main-nav__item"><a href="#" class="main-nav__link basket">Корзина: пока пуста</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+    <h1 class="main__title">Милые штуки ручной работы для дома</h1>
+    <section class="catalog">
+      <h2 class="visually-hidden">Каталог продукции</h2>
+      <a href="#" class="catalog__item interior-items">Предметы интерьера</a>
+      <a href="#" class="catalog__item kids-toys">Детские игрушки</a>
+    </section>
+    <section class="popular-products">
+      <h2 class="visually-hidden">Товары недели</h2>
+      <article class="product-hot">
+        <h2 class="product-hot__title">Вязаные корзинки</h2>
+        <span class="product-hot__mark">Товар недели</span>
+        <p class="product-hot__subtitle">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех
+          размерах.</p>
+        <img class="product-hot__image" src="http://placehold.it/150x100" alt="Вязаные корзинки">
+        <table class="product-hot__specifications">
+          <tr class="product-hot__specifications-item">
+            <th class="product-hot__specifications-property">Цвет:</th>
+            <td class="product-hot__specifications-value">«Тиффани»/серый</td>
+          </tr>
+          <tr class="product-hot__specifications-item">
+            <th class="product-hot__specifications-property">Диаметр:</th>
+            <td class="product-hot__specifications-value">25 см</td>
+          </tr>
+          <tr class="product-hot__specifications-item">
+            <th class="product-hot__specifications-property">Высота:</th>
+            <td class="product-hot__specifications-value">15 см</td>
+          </tr>
+        </table>
+        <p class="product-hot__price">Цена: 990 руб.</p>
+        <a href="#" class="product-hot__link">Заказать</a>
+      </article>
+    </section>
+    <section class="about-us">
+      <h2 class="about-us__title">Коротко о нас:</h2>
+      <p class="about-us__item">Экологически чистые материалы</p>
+      <p class="about-us__item">Скандинавский стиль по российской цене</p>
+      <p class="about-us__item">Увеличивает лайки на фотографиях</p>
+      <p class="about-us__item">Связано вручную с любовью и умилением</p>
+      <p class="about-us__item">Поддержка отечественного производителя</p>
+      <p class="about-us__item">Поставляется в подарочной упаковке</p>
+    </section>
+    <section class="reviews">
+      <div class="reviews-wrapper reviews-slider">
+        <h2 class="reviews__title">Отзывы</h2>
+        <div class="reviews__list reviews-slider__list">
+          <blockquote class="reviews__item reviews-slider__item">
+            <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества
+              лайков,
+              как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии
+              сразу
+              стали более стильными, а также набирают больше лайков!</p>
+            <cite class="reviews__author-name">Анастасия Красильникова</cite>
+            <span class="reviews__author-hashtag">@misssssiskras</span>
+          </blockquote>
+        </div>
+        <button class="reviews__toggles reviews-slider__toggle"></button>
+        <button class="reviews__toggles reviews-slider__toggle"></button>
+      </div>
+      <a href="#" class="reviews__write">Написать</a>
+    </section>
+    <section class="contacts">
+      <h2 class="contacts__title">Контакты</h2>
+      <p class="email contacts__item">
+        <span class="contacts__item__title">e-mail:</span>info@mimimishkashop.ru</p>
+      <p class="address contacts__item">
+        <span class="contacts__item__title">адрес:</span>г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101
+      </p>
+    </section>
+    <section class="write-us">
+      <h2 class="visually-hidden">Напишите нам</h2>
+      <div id="map" class="map">
+        <img class="map__img" src="http://placehold.it/150x100"
+          alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
+      </div>
+      <a href="#" class="write-us__btn">Напишите нам</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <section class="social">
+      <h2 class="visually-hidden">Мы в социальных сетях</h2>
+      <a href="#" class="vk social__link">vk</a>
+      <a href="#" class="instagram social__link">instagram</a>
+      <a href="#" class="tw social__link">tw</a>
+    </section>
+    <div class="developed">
+      <a href="https://htmlacademy.ru/intensive/adaptive" class="developed__link">Разработано</a>
+    </div>
+  </footer>
+
+  <div class="modal">
+    <h2 class="modal__title">Добавить в корзину</h2>
+    <form class="modal-form" action="https://echo.htmlacademy.ru" method="get">
+      <span class="modal-form__title">Выберите размер:</span>
+      <div class="modal-form__items">
+        <input class="modal-form__input" type="checkbox" name="size-s" id="size-s">
+        <label class="modal-form__label" for="size-s">s</label>
+        <input class="modal-form__input" type="checkbox" name="size-m" id="size-m">
+        <label class="modal-form__label" for="size-m">m</label>
+        <input class="modal-form__input" type="checkbox" name="size-l" id="size-l">
+        <label class="modal-form__label" for="size-m">l</label>
+      </div>
+      <button class="modal-form__submit" type="submit">Добавить</button>
+    </form>
+  </div>
+
+</body>
+
 </html>
