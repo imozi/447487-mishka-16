@@ -1,12 +1,10 @@
 html {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: inherit;
   box-sizing: inherit;
 }
 
@@ -24,6 +22,6 @@ img {
   height: auto;
 }
 
-.visually-hidden{
+.visually-hidden {
   @include visually-hidden;
 }
