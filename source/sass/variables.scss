@@ -1,3 +1,26 @@
+//indents
+$indents-margin: 0;
+$indents-padding: 0;
+
+//font style
+$font-base: "Open Sans", Arial, sans-serif;
 $font-base-size: 15px;
-$font-regular: 'OpenSansRegular', Arial, sans-serif;
-$font-bold: 'OpenSansBold', Arial, sans-serif;
+$fw-regular: 400;
+$fw-bold: 700;
+$fstyle: normal;
+
+//colors
+$black: hsl(0, 0%, 0%);
+$black-60: hsla(0, 0%, 0%, 0.6);
+$black-30: hsla(0, 0%, 0%, 0.3);
+$gray: hsl(0, 0%, 95%);
+$greyish-brown: hsl(0, 0%, 27%);
+$greyish-brown-30: hsla(0, 0%, 27%, 0.3);
+$white: hsl(0, 0%, 100%);
+$white-30: hsla(0, 0%, 100%, 0.3);
+$white-grey: hsl(0, 0%, 93%);
+$seafoam-blue: hsl(168, 54%, 60%);
+$seafoam-dark-blue: hsl(171, 48%, 55%) ;
+$seafoam-blue-hover: hsl(168, 60%, 59%);
+$seafoam-dark-blue-hover: hsl(171, 50%, 52%);
+

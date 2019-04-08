@@ -13,3 +13,18 @@
   font-weight: 700;
   font-style: normal;
 }
+
+
+body {
+  font-family: $font-base;
+  font-size: $font-base-size;
+  font-weight: $fw-regular;
+  font-style: $fstyle;
+  color: $greyish-brown;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: $fw-bold;
+  font-style: $fstyle;
+  color: $black;
+}

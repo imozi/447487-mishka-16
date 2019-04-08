@@ -1,4 +1,8 @@
-@import "normalize.scss";
-@import "variable.scss";
-@import "fonts.scss";
-@import "global.scss";
+//global style
+@import "./reset/normalize.scss";
+@import "variables.scss";
+@import "mixins.scss";
+@import "./global/fonts.scss";
+@import "./global/general.scss";
+
+//block

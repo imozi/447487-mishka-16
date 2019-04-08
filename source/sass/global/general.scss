@@ -11,10 +11,8 @@ html {
 }
 
 body {
-  font-family: "Open Sans", Arial, sans-serif;
-  font-size: 15px;
-  font-weight: normal;
-  color: rgba(68, 68, 68, 1);
+  margin: $indents-margin;
+  padding: $indents-padding;
 }
 
 a {
@@ -24,4 +22,8 @@ a {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.visually-hidden{
+  @include visually-hidden;
 }
