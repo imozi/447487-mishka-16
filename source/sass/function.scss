@@ -1,0 +1,6 @@
+/*stylelint-disable*/
+@function breakpoint($screen-size) {
+  @if map-has-key($breakpoints, $screen-size) {
+    @return map-get($breakpoints, $screen-size);
+  }
+}

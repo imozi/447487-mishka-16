@@ -3,22 +3,33 @@ $indents-margin: 0;
 $indents-padding: 0;
 
 //breakpoints
-$screen-m: 320px;
-$screen-t: 768px;
-$screen-d: 1150px;
+$screen-m: 320px !default;
+$screen-t: 768px !default;
+$screen-d: 1150px !default;
+
+$breakpoints: (
+  "mobile" : $screen-m,
+  "tablet": $screen-t,
+  "desktop": $screen-d
+);
 
 //font style
 $font-base: "Open Sans", "Arial", sans-serif;
-$font-base-size: 15px;
+
+$font-size--smallest: 15px !default;
+$font-size--smaller: 17px !default;
+$font-size--small: 18px !default;
+$font-size--regular: 19px !default;
+$font-size--large: 20px !default;
+$font-size--x-large: 25px !default;
+$font-size--xx-large: 27px !default;
+$font-size--xxx-large: 43px !default;
+$font-size--xxxx-large: 53px !default;
+
 $fw-regular: 400;
 $fw-bold: 700;
 $fstyle: normal;
-$fsize-h1-m: 27px;
-$fsize-h1-t: 43px;
-$fsize-h1-d: 53px;
-$fsize-h2-m: 25px;
-$fsize-h2-t: 43px;
-$fsize-h2-d: 53px;
+
 
 //colors
 $black: hsl(0, 0%, 0%);

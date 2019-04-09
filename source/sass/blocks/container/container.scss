@@ -3,13 +3,13 @@
 }
 
 
-@media (min-width: $screen-t) {
+@media (min-width: breakpoint(tablet)) {
   .container {
     @include container (668px, 50px);
   }
 }
 
-@media (min-width: $screen-d) {
+@media (min-width: breakpoint(desktop)) {
   .container {
     @include container (1050px, 50px);
   }
