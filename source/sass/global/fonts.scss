@@ -29,7 +29,13 @@ h3,
 h4,
 h5,
 h6 {
+  margin: $indents-margin;
   font-weight: $fw-bold;
   font-style: $fstyle;
   color: $black;
+}
+
+h2 {
+  font-size: 25px;
+  line-height: 1.2;
 }

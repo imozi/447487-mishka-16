@@ -1,3 +1,10 @@
+@mixin container ($width, $padding) {
+  width: $width;
+  margin: 0 auto;
+  padding: 0 $padding;
+  border: 2px solid red;
+}
+
 @mixin visually-hidden() {
   position: absolute;
   width: 1px;
@@ -9,4 +16,10 @@
   border: 0;
   clip: rect(0 0 0 0);
   clip-path: inset(100%);
+}
+
+@mixin list-reset() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }

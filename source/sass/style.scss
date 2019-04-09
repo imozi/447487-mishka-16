@@ -6,3 +6,23 @@
 @import "./global/general.scss";
 
 //block
+@import "./blocks/visually-hidden/visually-hidden.scss";
+@import "./blocks/container/container.scss";
+@import "./blocks/header/header.scss";
+@import "./blocks/header/header__container.scss";
+@import "./blocks/main-nav/main-nav.scss";
+@import "./blocks/main/main.scss";
+@import "./blocks/main/main__description.scss";
+@import "./blocks/catalog/catalog.scss";
+@import "./blocks/catalog/interior-items.scss";
+@import "./blocks/catalog/kids-toys.scss";
+@import "./blocks/popular-products/popular-products.scss";
+@import "./blocks/about-us/about-us.scss";
+@import "./blocks/reviews/reviews.scss";
+@import "./blocks/contacts/contacts.scss";
+@import "./blocks/catalog-product/catalog-product.scss";
+@import "./blocks/product/product.scss";
+@import "./blocks/production-process/production-process.scss";
+@import "./blocks/form/form.scss";
+@import "./blocks/footer/footer.scss";
+@import "./blocks/modal/modal.scss";

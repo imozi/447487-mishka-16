@@ -1,12 +1,25 @@
 //indents
 $indents-margin: 0;
 $indents-padding: 0;
+
+//breakpoints
+$screen-m: 320px;
+$screen-t: 768px;
+$screen-d: 1150px;
+
 //font style
 $font-base: "Open Sans", "Arial", sans-serif;
 $font-base-size: 15px;
 $fw-regular: 400;
 $fw-bold: 700;
 $fstyle: normal;
+$fsize-h1-m: 27px;
+$fsize-h1-t: 43px;
+$fsize-h1-d: 53px;
+$fsize-h2-m: 25px;
+$fsize-h2-t: 43px;
+$fsize-h2-d: 53px;
+
 //colors
 $black: hsl(0, 0%, 0%);
 $black-60: hsla(0, 0%, 0%, 0.6);
