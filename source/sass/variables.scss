@@ -16,32 +16,63 @@ $breakpoints: (
 //font style
 $font-base: "Open Sans", "Arial", sans-serif;
 
-$font-size--smallest: 15px !default;
-$font-size--smaller: 17px !default;
-$font-size--small: 18px !default;
-$font-size--regular: 19px !default;
-$font-size--large: 20px !default;
-$font-size--x-large: 25px !default;
-$font-size--xx-large: 27px !default;
-$font-size--xxx-large: 43px !default;
-$font-size--xxxx-large: 53px !default;
+$font-size--xxxs: 13px !default;
+$font-size--xxs: 15px !default;
+$font-size--xs: 17px !default;
+$font-size--s: 18px !default;
+$font-size--m: 19px !default;
+$font-size--xm: 20px !default;
+$font-size--xxm: 25px !default;
+$font-size--xl: 27px !default;
+$font-size--xxl: 43px !default;
+$font-size--xxxl: 53px !default;
 
-$fw-regular: 400;
-$fw-bold: 700;
-$fstyle: normal;
 
+$font-sizes: (
+  base-m: $font-size--xxs,
+  base-t: $font-size--xs,
+  base-d: $font-size--xs,
+  h1-m: $font-size--xl,
+  h2-m: $font-size--xxm,
+  h1-t: $font-size--xxl,
+  h2-t: $font-size--xxl,
+  h1-d: $font-size--xxxl,
+  h2-d: $font-size--xxxl,
+  other-xxxs: $font-size--xxxs,
+  other-xxs: $font-size--xxs,
+  other-xs: $font-size--xs,
+  other-s: $font-size--s,
+  other-m: $font-size--m,
+  other-xm: $font-size--xm
+);
+
+$font-weights: (
+  regular: 400,
+  bold: 700,
+);
+
+$line-heights: (
+  lh-17: 17px,
+  lh-18: 18px,
+  lh-20: 20px,
+  lh-22: 22px,
+  lh-24: 24px,
+  lh-30: 30px,
+  lh-50: 50px,
+  lh-57: 57px,
+);
 
 //colors
-$black: hsl(0, 0%, 0%);
-$black-60: hsla(0, 0%, 0%, 0.6);
-$black-30: hsla(0, 0%, 0%, 0.3);
-$gray: hsl(0, 0%, 95%);
-$greyish-brown: hsl(0, 0%, 27%);
-$greyish-brown-30: hsla(0, 0%, 27%, 0.3);
-$white: hsl(0, 0%, 100%);
-$white-30: hsla(0, 0%, 100%, 0.3);
-$white-grey: hsl(0, 0%, 93%);
-$seafoam-blue: hsl(168, 54%, 60%);
-$seafoam-dark-blue: hsl(171, 48%, 55%);
-$seafoam-blue-hover: hsl(168, 60%, 59%);
-$seafoam-dark-blue-hover: hsl(171, 50%, 52%);
+$black: hsl(0, 0%, 0%) !default;
+$black-60: hsla(0, 0%, 0%, 0.6) !default;
+$black-30: hsla(0, 0%, 0%, 0.3) !default;
+$gray: hsl(0, 0%, 95%) !default;
+$greyish-brown: hsl(0, 0%, 27%) !default;
+$greyish-brown-30: hsla(0, 0%, 27%, 0.3) !default;
+$white: hsl(0, 0%, 100%) !default;
+$white-30: hsla(0, 0%, 100%, 0.3) !default;
+$white-grey: hsl(0, 0%, 93%) !default;
+$seafoam-blue: hsl(168, 54%, 60%) !default;
+$seafoam-dark-blue: hsl(171, 48%, 55%) !default;
+$seafoam-blue-hover: hsl(168, 60%, 59%) !default;
+$seafoam-dark-blue-hover: hsl(171, 50%, 52%) !default;

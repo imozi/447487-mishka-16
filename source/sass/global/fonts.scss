@@ -17,10 +17,22 @@
 
 body {
   font-family: $font-base;
-  font-size: $font-size--smallest;
-  font-weight: $fw-regular;
-  font-style: $fstyle;
+  font-size: font-size(base-m);
+  font-weight: font-weight(regular);
+  font-style: normal;
   color: $greyish-brown;
+}
+
+@media (min-width: breakpoint(tablet)) {
+  body {
+    font-size: font-size(base-t);
+  }
+}
+
+@media (min-width: breakpoint(desktop)) {
+  body {
+    font-size: font-size(base-d);
+  }
 }
 
 h1,
@@ -30,12 +42,7 @@ h4,
 h5,
 h6 {
   margin: $indents-margin;
-  font-weight: $fw-bold;
-  font-style: $fstyle;
+  font-weight: font-weight(bold);
+  font-style: normal;
   color: $black;
-}
-
-h2 {
-  font-size: 25px;
-  line-height: 1.2;
 }

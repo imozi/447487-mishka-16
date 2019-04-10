@@ -1,0 +1,13 @@
+.main-nav__list {
+  @include list-reset();
+}
+
+.main-nav-second {
+  display: none;
+}
+
+@media (min-width: breakpoint(desktop)) {
+  .main-nav-second {
+    display: block;
+  }
+}

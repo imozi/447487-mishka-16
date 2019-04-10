@@ -1,3 +1,20 @@
 .catalog__item {
+  font-size: font-size(other-m);
+  font-weight: font-weight(bold);
+  line-height: line-height(lh-24);
+  font-style: normal;
   color: $white;
+}
+
+@media (min-width: breakpoint(tablet)) {
+  .catalog__item {
+    font-size: font-size(other-xm);
+  }
+}
+
+@media (min-width: breakpoint(desktop)) {
+  .catalog__item {
+    font-size: font-size(other-xm);
+    line-height: line-height(lh-30);
+  }
 }

@@ -1,16 +1,16 @@
 .container {
-  @include container (260px, 30px);
+  @include container (320px, 30px);
 }
 
 
 @media (min-width: breakpoint(tablet)) {
   .container {
-    @include container (668px, 50px);
+    @include container (768px, 50px);
   }
 }
 
 @media (min-width: breakpoint(desktop)) {
   .container {
-    @include container (1050px, 50px);
+    @include container (1150px, 50px);
   }
 }

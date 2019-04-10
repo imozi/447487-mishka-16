@@ -1,4 +1,22 @@
 /*stylelint-disable*/
+@function font-size($f-size) {
+  @if map-has-key($font-sizes, $f-size) {
+    @return map-get($font-sizes, $f-size);
+  }
+}
+
+@function font-weight($fw-size) {
+  @if map-has-key($font-weights, $fw-size) {
+    @return map-get($font-weights, $fw-size);
+  }
+}
+
+@function line-height($lh-size) {
+  @if map-has-key($line-heights, $lh-size) {
+    @return map-get($line-heights, $lh-size);
+  }
+}
+
 @function breakpoint($screen-size) {
   @if map-has-key($breakpoints, $screen-size) {
     @return map-get($breakpoints, $screen-size);
