@@ -1,0 +1,21 @@
+.about-us__item {
+  font-size: font-size(other-xs);
+  font-weight: font-weight(bold);
+  line-height: line-height(lh-20);
+  color: $black;
+}
+
+
+@media (min-width: breakpoint(tablet)) {
+  .about-us__item {
+    font-size: font-size(other-xm);
+    line-height: line-height(lh-22);
+  }
+}
+
+@media (min-width: breakpoint(desktop)) {
+  .about-us__item {
+    font-size: font-size(other-xm);
+    line-height: line-height(lh-22);
+  }
+}

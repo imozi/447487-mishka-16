@@ -1,0 +1,18 @@
+.about-us__title {
+  font-size: font-size(h2-m);
+  line-height: line-height(lh-30);
+}
+
+@media (min-width: breakpoint(tablet)) {
+  .about-us__title {
+    font-size: font-size(h2-t);
+    line-height: line-height(lh-50);
+  }
+}
+
+@media (min-width: breakpoint(desktop)) {
+  .about-us__title {
+    font-size: font-size(h2-d);
+    line-height: line-height(lh-57);
+  }
+}

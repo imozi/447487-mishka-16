@@ -1,0 +1,19 @@
+.product__price {
+  font-size: font-size(other-xxs);
+  font-weight: font-weight(bold);
+  line-height: line-height(lh-24);
+  color: $black;
+}
+
+
+@media (min-width: breakpoint(tablet)) {
+  .product__price {
+    font-size: font-size(other-xs);
+  }
+}
+
+@media (min-width: breakpoint(desktop)) {
+  .product__price {
+    font-size: font-size(other-xs);
+  }
+}

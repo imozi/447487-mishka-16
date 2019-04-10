@@ -63,16 +63,16 @@ $line-heights: (
 );
 
 //colors
-$black: hsl(0, 0%, 0%) !default;
-$black-60: hsla(0, 0%, 0%, 0.6) !default;
-$black-30: hsla(0, 0%, 0%, 0.3) !default;
-$gray: hsl(0, 0%, 95%) !default;
-$greyish-brown: hsl(0, 0%, 27%) !default;
-$greyish-brown-30: hsla(0, 0%, 27%, 0.3) !default;
-$white: hsl(0, 0%, 100%) !default;
-$white-30: hsla(0, 0%, 100%, 0.3) !default;
-$white-grey: hsl(0, 0%, 93%) !default;
-$seafoam-blue: hsl(168, 54%, 60%) !default;
-$seafoam-dark-blue: hsl(171, 48%, 55%) !default;
-$seafoam-blue-hover: hsl(168, 60%, 59%) !default;
-$seafoam-dark-blue-hover: hsl(171, 50%, 52%) !default;
+$black: rgb(0, 0, 0) !default;
+$black-60: rgba(0, 0, 0, 0.6) !default;
+$black-30: rgba(0, 0, 0, 0.3) !default;
+$gray: rgb(242, 242, 242) !default;
+$greyish-brown: rgb(68, 68, 68) !default;
+$greyish-brown-30: rgba(68, 68, 68, 0.3) !default;
+$white: rgb(255, 255, 255) !default;
+$white-30: rgba(255, 255, 255, 0.3) !default;
+$white-grey: rgb(237, 237, 237) !default;
+$seafoam-blue: rgb(97, 208, 186) !default;
+$seafoam-dark-blue: rgb(85, 195, 178) !default;
+$seafoam-blue-hover: rgb(87, 213, 188) !default;
+$seafoam-dark-blue-hover: rgb(71, 193, 175) !default;
