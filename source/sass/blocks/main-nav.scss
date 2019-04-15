@@ -1,0 +1,35 @@
+.main-nav__list {
+  @include list-reset;
+}
+
+.main-nav__link {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  color: $black;
+}
+
+.main-nav-second {
+  display: none;
+}
+
+@media (min-width: $tablet-screen) {
+  .main-nav-fisrt__link {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: $desktop-screen) {
+  .main-nav-second {
+    display: block;
+  }
+
+  .main-nav-fisrt__link {
+    font-size: 17px;
+  }
+
+  .main-nav-second__link {
+    font-size: 15px;
+    line-height: 24px;
+  }
+}

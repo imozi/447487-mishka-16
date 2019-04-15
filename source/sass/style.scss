@@ -1,0 +1,21 @@
+//global style
+@import "reset/normalize.scss";
+@import "variables.scss";
+@import "mixins.scss";
+@import "./global/general.scss";
+//block
+@import "blocks/container.scss";
+@import "blocks/header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/main.scss";
+@import "blocks/catalog.scss";
+@import "blocks/popular-product.scss";
+@import "blocks/about-us.scss";
+@import "blocks/reviews.scss";
+@import "blocks/contacts.scss";
+@import "blocks/map.scss";
+@import "blocks/modal.scss";
+@import "blocks/footer.scss";
+@import "blocks/product.scss";
+@import "blocks/production-process.scss";
+@import "blocks/form.scss";

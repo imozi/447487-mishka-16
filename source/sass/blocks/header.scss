@@ -1,0 +1,11 @@
+.header__delivery {
+  display: none;
+}
+
+@media (min-width: $tablet-screen) {
+  .header__delivery {
+    display: block;
+    font-size: 15px;
+    line-height: 24px;
+  }
+}

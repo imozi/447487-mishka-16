@@ -1,0 +1,31 @@
+.production-process__title {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  color: $black;
+}
+
+.production-process__description {
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.production-process__link {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $greyish-brown;
+  border: 2px solid $greyish-brown;
+}
+
+@media (min-width: $tablet-screen) {
+  .production-process__title {
+    font-size: 20px;
+  }
+
+  .production-process__description {
+    font-size: 15px;
+    line-height: 30px;
+  }
+}
