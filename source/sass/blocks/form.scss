@@ -1,0 +1,50 @@
+.form__fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.form__legend {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $seafoam-blue;
+}
+
+.form__label {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 18px;
+  color: $black;
+}
+
+.form__required-field {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.form__submit {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $greyish-brown;
+  background-color: $white;
+  border: 2px solid $greyish-brown;
+}
+
+@media (min-width: $tablet-screen) {
+  .form__label {
+    font-size: 19px;
+  }
+
+  .form__required-field {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .form__fieldset--bg {
+    background-color: $gray;
+  }
+}

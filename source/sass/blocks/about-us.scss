@@ -1,0 +1,33 @@
+.about-us__title {
+  font-size: 25px;
+  font-weight: 700;
+  color: $black;
+}
+
+.about-us__item {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+  color: $black;
+}
+
+@media (min-width: $tablet-screen) {
+  .about-us__title {
+    font-size: 43px;
+    line-height: 50px;
+    color: $black;
+  }
+
+  .about-us__item {
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+
+@media (min-width: $desktop-screen) {
+  .about-us__title {
+    font-size: 53px;
+    line-height: 57px;
+    color: $black;
+  }
+}

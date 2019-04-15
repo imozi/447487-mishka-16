@@ -1,15 +1,14 @@
 .container {
   @include container (320px, 30px);
-  border: 1px solid red;
 }
 
-@media (min-width: breakpoint(tablet)) {
+@media (min-width: $tablet-screen) {
   .container {
     @include container (768px, 50px);
   }
 }
 
-@media (min-width: breakpoint(desktop)) {
+@media (min-width: $desktop-screen) {
   .container {
     @include container (1150px, 50px);
   }

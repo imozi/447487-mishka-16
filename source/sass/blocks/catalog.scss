@@ -1,0 +1,22 @@
+.catalog__link {
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 24px;
+  color: $white;
+}
+
+.catalog__link--blue {
+  background-color: $seafoam-blue;
+}
+
+.catalog__link--dark-blue {
+  background-color: $seafoam-dark-blue;
+}
+
+
+@media (min-width: $tablet-screen) {
+  .catalog__link {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
