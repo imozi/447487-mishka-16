@@ -15,7 +15,7 @@
   line-height: 24px;
   color: $black;
   padding: 28px 0 27px 76px;
-  box-shadow: 0 1px 0 0 $white-grey, inset 0 1px 0 0 $white-grey;
+  border-bottom: 1px solid $white-grey;
 }
 
 .main-nav {
@@ -91,6 +91,10 @@
   .main-nav {
     flex-direction: row;
     flex-wrap: wrap;
+  }
+
+  .main-nav__link {
+    border: none;
   }
 
   .main-nav__logo-link {

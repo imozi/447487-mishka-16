@@ -1,5 +1,5 @@
 .header {
-  box-shadow: 0 1px 0 0 $white-grey, inset 0 1px 0 0 $white-grey;
+  border-bottom: 1px solid $white-grey;
 }
 
 @media (min-width: $tablet-screen) {
