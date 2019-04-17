@@ -1,11 +1,15 @@
-.header__delivery {
-  display: none;
+.header {
+  box-shadow: 0 1px 0 0 $white-grey, inset 0 1px 0 0 $white-grey;
 }
 
 @media (min-width: $tablet-screen) {
-  .header__delivery {
-    display: block;
-    font-size: 15px;
-    line-height: 24px;
+  .header__container {
+    @include container (768px, 50px);
+  }
+}
+
+@media (min-width: $desktop-screen) {
+  .header__container {
+    @include container (1150px, 50px);
   }
 }

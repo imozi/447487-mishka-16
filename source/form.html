@@ -6,16 +6,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Мишка-Вязание на заказ</title>
   <link rel="stylesheet" href="css/style.css">
+  <script>
+    document.createElement("picture");
+  </script>
+  <script src="js/picturefill.js" async type="text/javascript"></script>
 </head>
 
 <body>
 
   <header class="header">
-    <div class="container header__container">
+    <div class="header__container">
       <nav class="main-nav">
-        <a href="index.html" class="header__logo-link">
-          <img class="logo header__logo" src="img/logo-mobile.svg" width="85.589px" height="35.034px"
-            alt="Интернет-магазин игрушек ручной работы">
+        <a href="index.html" class="main-nav__logo-link">
+          <picture>
+            <source srcset="img/logo-desktop.svg" media="(min-width: 1150px)">
+            <source srcset="img/logo-tablet.svg" media="(min-width: 768px)">
+            <img class="main-nav__logo-img" src="img/logo-mobile.svg" alt="Интернет-магазин игрушек ручной работы">
+          </picture>
         </a>
         <button class="main-nav__toggle" type="button" aria-label="Меню"></button>
         <ul class="main-nav__list main-nav-fisrt">
@@ -32,13 +39,13 @@
         </ul>
         <ul class="main-nav__list main-nav__list-third">
           <li class="main-nav__item main-nav-third__item"><a href="#"
-              class="main-nav__link main-nav-third__link search"><span class="main-nav__item-text">Поиск по
+              class="main-nav__link main-nav-third__search"><span class="main-nav__item-text">Поиск по
                 сайту</span></a></li>
           <li class="main-nav__item main-nav-third__item"><a href="#"
-              class="main-nav__link main-nav-third__link basket">Корзина: пока пуста</a></li>
+              class="main-nav__link main-nav-third__basket">Корзина: пока пуста</a></li>
         </ul>
+        <span class="main-nav__delivery">Бесплатная доставка по России</span>
       </nav>
-      <span class="header__delivery">Бесплатная доставка по России</span>
     </div>
   </header>
 
@@ -130,7 +137,7 @@
       </div>
     </div>
   </footer>
-
+  <script src="js/main.js" type="text/javascript"></script>
 </body>
 
 </html>

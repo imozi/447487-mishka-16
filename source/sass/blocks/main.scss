@@ -1,14 +1,18 @@
 .main__description {
-  background-color: $gray;
+  min-height: 283px;
+  padding-top: 72px;
+  text-align: center;
+  background-color: #f9f9f9;
 }
 
 .main__description--bgi {
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-position: center -18px;
 }
 
 .main__title {
+  margin: 0;
   font-size: 27px;
   font-weight: 700;
   line-height: 30px;
@@ -21,8 +25,14 @@
 }
 
 @media (min-width: $tablet-screen) {
+  .main__description {
+    min-height: 627px;
+    padding-top: 155px;
+  }
+
   .main__description--bgi {
     background-image: url("../img/hero-tablet@1x.jpg");
+    background-position: center 0;
   }
 
   .main__title {
