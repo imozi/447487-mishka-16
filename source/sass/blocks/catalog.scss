@@ -52,13 +52,19 @@
 
 @media (min-width: $tablet-screen) {
   .catalog__container {
+    @include container (768px, 50px);
     display: flex;
     flex-wrap: nowrap;
-    padding: 0 50px;
   }
 
   .catalog__link {
     font-size: 20px;
     line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-screen) {
+  .catalog__container {
+    @include container (1150px, 50px);
   }
 }

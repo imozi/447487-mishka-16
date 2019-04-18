@@ -24,6 +24,10 @@
   flex-direction: column;
 }
 
+.main-nav-fisrt {
+  border-top: 1px solid $white-grey;
+}
+
 .main-nav__logo-link {
   display: block;
   align-self: center;
@@ -122,6 +126,7 @@
     bottom: -42px;
     padding: 0;
     order: 2;
+    border: none;
   }
 
   .main-nav-fisrt__link {

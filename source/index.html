@@ -56,7 +56,7 @@
       </div>
     </div>
     <section class="catalog">
-      <div class="container catalog__container">
+      <div class="catalog__container">
         <h2 class="visually-hidden">Каталог продукции</h2>
         <a href="#" class="catalog__link catalog__link--blue">Предметы <br> интерьера</a>
         <a href="#" class="catalog__link catalog__link--dark-blue">Детские <br> игрушки</a>
@@ -67,39 +67,48 @@
       <article class="container popular-product">
         <h2 class="popular-product__title">Вязаные корзинки</h2>
         <span class="popular-product__mark">Товар недели</span>
-        <p class="popular-product__subtitle">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и
-          трех
-          размерах.</p>
-        <img class="popular-product__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315"
-          alt="Вязаные корзинки">
-        <table class="popular-product__specifications">
-          <tr class="popular-product__specifications-item">
-            <th class="popular-product__specifications-property">Цвет:</th>
-            <td class="popular-product__specifications-value">«Тиффани»/серый</td>
-          </tr>
-          <tr class="popular-product__specifications-item">
-            <th class="popular-product__specifications-property">Диаметр:</th>
-            <td class="popular-product__specifications-value">25 см</td>
-          </tr>
-          <tr class="popular-product__specifications-item">
-            <th class="popular-product__specifications-property">Высота:</th>
-            <td class="popular-product__specifications-value">15 см</td>
-          </tr>
-        </table>
-        <p class="popular-product__price">Цена: 990 руб.</p>
-        <a href="#" class="popular-product__link">Заказать</a>
+        <div class="popular-product__container">
+          <p class="popular-product__subtitle">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и
+            трех
+            размерах.</p>
+          <table class="popular-product__specifications">
+            <tbody class="popular-product__tbody">
+              <tr class="popular-product__specifications-item">
+                <th class="popular-product__specifications-property">Цвет:</th>
+                <td class="popular-product__specifications-value">«Тиффани»/серый</td>
+              </tr>
+              <tr class="popular-product__specifications-item">
+                <th class="popular-product__specifications-property">Диаметр:</th>
+                <td class="popular-product__specifications-value">25 см</td>
+              </tr>
+              <tr class="popular-product__specifications-item">
+                <th class="popular-product__specifications-property">Высота:</th>
+                <td class="popular-product__specifications-value">15 см</td>
+              </tr>
+            </tbody>
+          </table>
+          <picture class="popular-product__picture">
+            <source srcset="img/triple-set-desktop@1x.jpg" media="(min-width: 1150px)">
+            <source srcset="img/triple-set-tablet@1x.jpg" media="(min-width: 768px)">
+            <img class="popular-product__image" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@1x.jpg"
+              alt="Вязаные корзинки">
+          </picture>
+          <p class="popular-product__price">Цена: 990 руб.</p>
+          <a href="#" class="popular-product__link">Заказать</a>
+        </div>
       </article>
     </section>
     <section class="about-us">
       <div class="container">
         <h2 class="about-us__title">Коротко о нас:</h2>
-        <p class="about-us__item">Экологически чистые материалы</p>
-        <p class="about-us__item">Скандинавский стиль по российской цене</p>
-        <p class="about-us__item">Увеличивает лайки на фотографиях</p>
-        <p class="about-us__item">Связано вручную с любовью и умилением</p>
-        <p class="about-us__item">Поддержка отечественного производителя</p>
-        <p class="about-us__item">Поставляется в подарочной упаковке</p>
-      </div>
+        <div class="about-us__container">
+          <p class="about-us__item about-us__item--eco">Экологически чистые материалы</p>
+          <p class="about-us__item about-us__item--scandi">Скандинавский стиль по российской цене</p>
+          <p class="about-us__item about-us__item--like">Увеличивает лайки на фотографиях</p>
+          <p class="about-us__item about-us__item--kniting">Связано вручную с любовью и умилением</p>
+          <p class="about-us__item about-us__item--support">Поддержка отечественного производителя</p>
+          <p class="about-us__item about-us__item--present">Поставляется в подарочной упаковке</p>
+        </div>
     </section>
     <section class="reviews">
       <div class="container reviews-slider">
