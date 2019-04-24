@@ -1,0 +1,17 @@
+.catalog-product {
+  padding-top: 30px;
+}
+
+@media (min-width: $tablet-screen) {
+  .catalog-product {
+    padding-top: 67px;
+  }
+}
+
+@media (min-width: $desktop-screen) {
+  .catalog-product {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 109px;
+  }
+}
