@@ -43,6 +43,15 @@
 .reviews__author-hashtag {
   line-height: 30px;
   color: $black;
+
+  &:hover,
+  &:focus {
+    color: $seafoam-dark-blue-hover;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .reviews__list {
@@ -61,6 +70,17 @@
   background-color: transparent;
   border: 1px solid $white-grey;
   background-repeat: no-repeat;
+  outline: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .reviews-slider__toggle-back {
@@ -83,6 +103,16 @@
   text-transform: uppercase;
   color: $greyish-brown;
   border: 2px solid $greyish-brown;
+
+  &:hover,
+  &:focus {
+    color: $white;
+    background-color: $greyish-brown;
+  }
+
+  &:active {
+    color: $white-30;
+  }
 }
 
 .reviews-slider {
