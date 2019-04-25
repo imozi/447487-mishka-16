@@ -11,7 +11,7 @@
 @media (min-width: $desktop-screen) {
   .catalog-product {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
     padding-top: 109px;
   }
 }
