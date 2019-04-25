@@ -1,6 +1,11 @@
 .product {
   margin-bottom: 30px;
   border: 1px solid $white-grey;
+
+  &:hover .product__container,
+  &:focus .product__container {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
 }
 
 .product__title {
@@ -10,6 +15,15 @@
   font-weight: 700;
   line-height: 24px;
   color: $black;
+
+  &:hover,
+  &:focus {
+    color: $black-60;
+  }
+
+  &:active {
+    color: $black-30;
+  }
 }
 
 .product__container {
@@ -24,6 +38,7 @@
 }
 
 .product__price-container {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -43,10 +58,21 @@
   color: $black;
 }
 
+
 .product__link-bay {
   width: 20.294px;
   height: 18.849px;
   opacity: 0.2;
+
+  &:hover,
+  &:focus {
+    fill: $seafoam-blue;
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-screen) {
