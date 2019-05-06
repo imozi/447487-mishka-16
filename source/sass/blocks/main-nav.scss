@@ -71,6 +71,10 @@
   }
 }
 
+.main-nav__toggle--hidden {
+  display: none;
+}
+
 .main-nav__toggle {
   position: absolute;
   top: 31px;
