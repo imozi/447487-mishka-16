@@ -204,8 +204,8 @@
 
   .main-nav__logo-link {
     align-self: center;
-    order: 2;
-    margin-left: -70px;
+    order: 1;
+    margin-left: -27px;
     margin-right: 0;
     margin-top: 6px;
     padding: 0;
@@ -227,12 +227,12 @@
   }
 
   .main-nav-fisrt :nth-child(2) {
+    margin-left: 36px;
     padding-left: 34px;
     border-left: 1px solid $white-grey;
   }
 
   .main-nav-fisrt__item {
-    margin-right: 36px;
     padding: 31px 0 33px 0;
   }
 
@@ -247,6 +247,6 @@
   }
 
   .main-nav__list-third {
-    order: 3;
+    order: 2;
   }
 }
