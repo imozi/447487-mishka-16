@@ -25,103 +25,67 @@
 .about-us__item--eco {
   width: 196px;
   padding-top: 56px;
+}
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 8px;
-    display: block;
-    width: 31.972px;
-    height: 37.301px;
-    background-image: url("../img/icon-feature-flower.svg");
-    background-repeat: no-repeat;
-  }
+.about-us__item-icon-eco {
+  position: absolute;
+  top: 0;
+  left: 8px;
 }
 
 .about-us__item--scandi {
   width: 200px;
   padding-top: 55px;
+}
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    width: 46.575px;
-    height: 27.332px;
-    background-image: url("../img/icon-feature-money.svg");
-    background-repeat: no-repeat;
-  }
+.about-us__item-icon-money {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .about-us__item--like {
   width: 180px;
   padding-top: 55px;
+}
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 4px;
-    left: 7px;
-    display: block;
-    width: 33.05px;
-    height: 27.857px;
-    background-image: url("../img/icon-feature-heart.svg");
-    background-repeat: no-repeat;
-  }
+.about-us__item-icon-like {
+  position: absolute;
+  top: 4px;
+  left: 7px;
 }
 
 .about-us__item--kniting {
   width: 210px;
   padding-top: 53px;
+}
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 1px;
-    left: 3px;
-    display: block;
-    width: 34.373px;
-    height: 34.373px;
-    background-image: url("../img/icon-feature-ball.svg");
-    background-repeat: no-repeat;
-  }
+.about-us__item-icon-kitting {
+  position: absolute;
+  top: 1px;
+  left: 3px;
 }
 
 .about-us__item--support {
   width: 250px;
   padding-top: 53px;
+}
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 3px;
-    left: -6px;
-    display: block;
-    width: 54.156px;
-    height: 23.183px;
-    background-image: url("../img/icon-feature-rocket.svg");
-    background-repeat: no-repeat;
-  }
+.about-us__item-icon-support {
+  position: absolute;
+  top: 3px;
+  left: -6px;
 }
 
 .about-us__item--present {
   width: 250px;
   padding-top: 53px;
+}
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 1px;
-    left: 3px;
-    display: block;
-    width: 32.666px;
-    height: 32.486px;
-    background-image: url("../img/icon-feature-gift.svg");
-    background-repeat: no-repeat;
-  }
+.about-us__item-icon-present {
+  position: absolute;
+  top: 1px;
+  left: 3px;
 }
 
 @media (min-width: $tablet-screen) {

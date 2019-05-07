@@ -5,11 +5,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Мишка</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <script>
     document.createElement("picture");
   </script>
-  <script src="js/picturefill.js" async type="text/javascript"></script>
+  <script src="js/picturefill.min.js" async type="text/javascript"></script>
 </head>
 
 <body>
@@ -41,16 +41,16 @@
           <li class="main-nav__item main-nav-third__item main-nav-third__item-search"><a href="#"
               class="main-nav__link main-nav-third__search">
               <svg class="main-nav__search-icon" width="17.6" height="17.6">
-                <use xlink:href="img/svg-sprite/sprite.svg#search"></use>
+                <use xlink:href="img/svg/sprite.svg#icon-search"></use>
               </svg>
               <span class="main-nav__item-text">Поиск по
                 сайту</span></a></li>
           <li class="main-nav__item main-nav-third__item main-nav-third__item-basket"><a href="#"
               class="main-nav__link main-nav-third__basket">
               <svg class="main-nav__basket-icon" width="20.294" height="19">
-                <use xlink:href="img/svg-sprite/sprite.svg#cart"></use>
+                <use xlink:href="img/svg/sprite.svg#icon-cart"></use>
               </svg>
-              Корзина: пока пуста</a></li>
+              Корзина: <span class="quantity">пока пуста</span></a></li>
         </ul>
         <span class="main-nav__delivery">Бесплатная доставка по России</span>
       </nav>
@@ -66,8 +66,16 @@
     <section class="catalog">
       <div class="catalog__container">
         <h2 class="visually-hidden">Каталог продукции</h2>
-        <a href="#" class="catalog__link catalog__link--blue">Предметы <br> интерьера</a>
-        <a href="#" class="catalog__link catalog__link--dark-blue">Детские <br> игрушки</a>
+        <a href="#" class="catalog__link catalog__link--blue">Предметы <br> интерьера
+          <svg class="catalog__link-icon-interior" width="40.219" height="62.411">
+            <use xlink:href="img/svg/sprite.svg#icon-interior"></use>
+          </svg>
+        </a>
+        <a href="#" class="catalog__link catalog__link--dark-blue">Детские <br> игрушки
+          <svg class="catalog__link-icon-toy" width="60" height="59.62">
+            <use xlink:href="img/svg/sprite.svg#icon-toy"></use>
+          </svg>
+        </a>
       </div>
     </section>
     <section class="popular-products">
@@ -120,12 +128,36 @@
       <div class="container">
         <h2 class="about-us__title">Коротко о нас:</h2>
         <div class="about-us__container">
-          <p class="about-us__item about-us__item--eco">Экологически чистые материалы</p>
-          <p class="about-us__item about-us__item--scandi">Скандинавский стиль по российской цене</p>
-          <p class="about-us__item about-us__item--like">Увеличивает лайки на фотографиях</p>
-          <p class="about-us__item about-us__item--kniting">Связано вручную с любовью и умилением</p>
-          <p class="about-us__item about-us__item--support">Поддержка отечественного производителя</p>
-          <p class="about-us__item about-us__item--present">Поставляется в подарочной упаковке</p>
+          <p class="about-us__item about-us__item--eco">Экологически чистые материалы
+            <svg class="about-us__item-icon-eco" width="31.972" height="37.301">
+              <use xlink:href="img/svg/sprite.svg#icon-feature-flower"></use>
+            </svg>
+          </p>
+          <p class="about-us__item about-us__item--scandi">Скандинавский стиль по российской цене
+            <svg class="about-us__item-icon-money" width="46.575" height="27.332">
+              <use xlink:href="img/svg/sprite.svg#icon-feature-money"></use>
+            </svg>
+          </p>
+          <p class="about-us__item about-us__item--like">Увеличивает лайки на фотографиях
+            <svg class="about-us__item-icon-like" width="33.05" height="27.857">
+              <use xlink:href="img/svg/sprite.svg#icon-feature-heart"></use>
+            </svg>
+          </p>
+          <p class="about-us__item about-us__item--kniting">Связано вручную с любовью и умилением
+            <svg class="about-us__item-icon-kitting" width="34.373" height="34.373">
+              <use xlink:href="img/svg/sprite.svg#icon-feature-ball"></use>
+            </svg>
+          </p>
+          <p class="about-us__item about-us__item--support">Поддержка отечественного производителя
+            <svg class="about-us__item-icon-support" width="54.156" height="23.183">
+              <use xlink:href="img/svg/sprite.svg#icon-feature-rocket"></use>
+            </svg>
+          </p>
+          <p class="about-us__item about-us__item--present">Поставляется в подарочной упаковке
+            <svg class="about-us__item-icon-present" width="32.666" height="32.486">
+              <use xlink:href="img/svg/sprite.svg#icon-feature-gift"></use>
+            </svg>
+          </p>
         </div>
       </div>
     </section>
@@ -192,26 +224,26 @@
 
   <footer class="footer">
     <div class="container footer__container">
-      <a class="footer__logo-link">
-        <svg class="footer__logo" width="101.615px" height="34.056px">
-          <use xlink:href="img/svg-sprite/sprite.svg#logo"></use>
+      <a class="footer__logo-link" aria-label="Интернет-магазин игрушек ручной работы">
+        <svg class="footer__logo" width="101.615" height="34.056">
+          <use xlink:href="img/svg/sprite.svg#logo-footer"></use>
         </svg>
       </a>
       <section class="footer__social">
         <h2 class="visually-hidden">Мы в социальных сетях</h2>
-        <a href="#" class="footer__social-link" aria-label="instagram">
+        <a href="#" class="footer__social-link" aria-label="Мы в Инстаграм">
           <svg class="footer__logo-instagram" width="21.769" height="21.334">
-            <use xlink:href="img/svg-sprite/sprite.svg#instagram"></use>
+            <use xlink:href="img/svg/sprite.svg#icon-insta"></use>
           </svg>
         </a>
-        <a href="#" class="footer__social-link" aria-label="facebook">
+        <a href="#" class="footer__social-link" aria-label="Мы в Facebook">
           <svg class="footer__logo-facebook" width="14.962" height="27.718">
-            <use xlink:href="img/svg-sprite/sprite.svg#facebook"></use>
+            <use xlink:href="img/svg/sprite.svg#icon-fb"></use>
           </svg>
         </a>
-        <a href="#" class="footer__social-link" aria-label="twitter">
+        <a href="#" class="footer__social-link" aria-label="Мы в Twitter">
           <svg class="footer__logo-twitter" width="23.494" height="20.168">
-            <use xlink:href="img/svg-sprite/sprite.svg#twitter"></use>
+            <use xlink:href="img/svg/sprite.svg#icon-twitter"></use>
           </svg>
         </a>
       </section>
@@ -219,7 +251,7 @@
         <a href="https://htmlacademy.ru/intensive/adaptive" class="footer__developed-link">
           <span class="footer__developed-text">Разработано</span>
           <svg class="footer__developed-logo" width="26.943" height="34.09">
-            <use xlink:href="img/svg-sprite/sprite.svg#logo-htmlacademy"></use>
+            <use xlink:href="img/svg/sprite.svg#logo-htmlacademy"></use>
           </svg>
         </a>
       </div>
@@ -241,10 +273,11 @@
       <button class="modal-form__submit" type="submit">Добавить</button>
     </form>
   </div>
+
   <script src="js/svg4everybody.min.js" type="text/javascript"></script>
   <script>svg4everybody();</script>
   <script src="https://api-maps.yandex.ru/2.1/?apikey=e5bbda38-1328-4438-9f35-6b2fd9695d7d&lang=ru_RU"></script>
-  <script src="js/main.js" type="text/javascript"></script>
+  <script src="js/main.min.js" type="text/javascript"></script>
 </body>
 
 </html>
