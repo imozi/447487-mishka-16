@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Мишка-Каталог товаров</title>
+  <link rel="preload" href="/fonts/opensans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="/fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
   <script>
     document.createElement("picture");
@@ -183,11 +185,16 @@
             <img class="product__image" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x"
               alt="Процесс производства">
           </picture>
+          <a href="#" class="process-video__play">
+            <svg class="process-video__play-icon" width="100.678" height="76.891">
+              <use xlink:href="img/svg/sprite.svg#icon-play"></use>
+            </svg>
+          </a>
         </div>
-        <p class="production-process__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео
-          о
-          том, как появляются наши товары.</p>
-        <a href="#" class="production-process__link">Сделать заказ</a>
+        <div class="production-process-container">
+          <p class="production-process__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+          <a href="#" class="production-process__link">Сделать заказ</a>
+        </div>
       </section>
     </div>
   </main>

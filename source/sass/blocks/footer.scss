@@ -105,7 +105,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 52px 50px;
+    padding: 45px 50px;
   }
 
   .footer__logo {
@@ -122,11 +122,13 @@
   }
 
   .footer__social {
+    margin-top: 15px;
     margin-left: 80px;
     padding: 0;
   }
 
   .footer__developed {
+    margin-top: 6px;
     padding: 0;
     border-top: none;
   }
