@@ -43,6 +43,7 @@
 .reviews__author-hashtag {
   line-height: 30px;
   color: $black;
+  outline: none;
 
   &:hover,
   &:focus {
@@ -103,6 +104,7 @@
   text-transform: uppercase;
   color: $greyish-brown;
   border: 2px solid $greyish-brown;
+  outline: none;
 
   &:hover,
   &:focus {

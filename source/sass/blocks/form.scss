@@ -116,6 +116,14 @@
   }
 }
 
+.form-type__input--acs:focus + .form-type__accessory::before {
+  border-color: $seafoam-blue;
+}
+
+.form-type__input--kid:focus + .form-type__kids::before {
+  border-color: $seafoam-blue;
+}
+
 .form-type__input:checked + .form__label::after {
   display: block;
 }
@@ -163,6 +171,10 @@
     border-color: $greyish-brown;
     opacity: 0.3;
   }
+}
+
+.form-color__input:focus + .form__label::before {
+  border-color: $seafoam-blue;
 }
 
 .form-color__input:checked + .form__label::after {
@@ -359,6 +371,7 @@
   color: $greyish-brown;
   background-color: $white;
   border: 2px solid $greyish-brown;
+  overflow: hidden;
   outline: none;
   cursor: pointer;
 

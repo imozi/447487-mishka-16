@@ -40,16 +40,17 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
+  outline: none;
 
-.process-video__play-icon:hover,
-.process-video__play-icon:focus {
-  transform: scale(1.2);
-}
+  &:hover .process-video__play-icon,
+  &:focus .process-video__play-icon {
+    transform: scale(1.2);
+  }
 
-.process-video__play-icon:active {
-  transform: scale(0.8);
-  opacity: 0.3;
+  &:active .process-video__play-icon {
+    transform: scale(0.8);
+    opacity: 0.3;
+  }
 }
 
 .production-process-container {
@@ -73,6 +74,7 @@
   text-transform: uppercase;
   color: $greyish-brown;
   border: 2px solid $greyish-brown;
+  outline: none;
 
   &:hover,
   &:focus {
