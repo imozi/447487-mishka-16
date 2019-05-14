@@ -55,6 +55,12 @@
     line-height: 50px;
   }
 
+  .main__subtitle {
+    margin-top: 62px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
   .main__description--height {
     position: relative;
     padding-top: 95px;
@@ -96,5 +102,12 @@
   .main__title {
     font-size: 53px;
     line-height: 57px;
+  }
+
+  .main__subtitle {
+    margin: 0 auto;
+    margin-bottom: 8px;
+    padding-top: 102px;
+    width: 698px;
   }
 }

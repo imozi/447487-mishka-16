@@ -71,18 +71,20 @@
     </div>
     <form class="form" action="https://echo.htmlacademy.ru" method="post">
       <fieldset class="form__fieldset form-type">
-        <div class="container">
+        <div class="container form__flex-container">
           <h2 class="form__legend">Тип</h2>
-          <input class="form__input form-type__input visually-hidden" type="radio" name="type" id="accessory"
-            value="accessory" checked>
-          <label class="form__label form-type__accessory" for="accessory">Аксессуар для интерьера</label>
-          <input class="form__input form-type__input visually-hidden" type="radio" name="type" id="kids" value="kids">
-          <label class="form__label form-type__kids" for="kids">Детская игрушка</label>
+          <div class="form-type__container">
+            <input class="form__input form-type__input visually-hidden" type="radio" name="type" id="accessory"
+              value="accessory" checked>
+            <label class="form__label form-type__accessory" for="accessory">Аксессуар для интерьера</label>
+            <input class="form__input form-type__input visually-hidden" type="radio" name="type" id="kids" value="kids">
+            <label class="form__label form-type__kids" for="kids">Детская игрушка</label>
+          </div>
         </div>
       </fieldset>
       <fieldset class="form__fieldset form__fieldset--bg">
-        <div class="container">
-          <h2 class="form__legend">Цвет</h2>
+        <div class="container form__flex-container">
+          <h2 class="form__legend form__legend--mnt">Цвет</h2>
           <div class="form__color-container">
             <input class="form__input form-color__input visually-hidden" type="checkbox" name="white" id="white"
               checked>
@@ -101,25 +103,30 @@
         </div>
       </fieldset>
       <fieldset class="form__fieldset">
-        <div class="container">
-          <h2 class="form__legend">ФИО</h2>
-          <label class="form__label form-name__label" for="name">Имя:</label>
-          <input class="form__input form-name__input" type="text" name="name" id="name" placeholder="Введите ваше имя*"
-            required>
-          <label class="form__label form-surname__label" for="surname">Фамилия:</label>
-          <input class="form__input form-surname__input" type="text" name="surname" id="surname"
-            placeholder="Укажите фамилию*" required>
-          <label class="form__label form-last__label" for="last-name">Отчество:</label>
-          <input class="form__input form-last__input" type="text" name="last-name" id="last-name"
-            placeholder="Отчество, если желаете">
+        <div class="container form__flex-container">
+          <h2 class="form__legend form__legend--mnt">ФИО</h2>
+          <div class="form-user__container">
+            <label class="form__label form-name__label" for="name">Имя:</label>
+            <input class="form__input form-name__input" type="text" name="name" id="name"
+              placeholder="Введите ваше имя*" required>
+            <label class="form__label form-surname__label" for="surname">Фамилия:</label>
+            <input class="form__input form-surname__input" type="text" name="surname" id="surname"
+              placeholder="Укажите фамилию*" required>
+            <label class="form__label form-last__label" for="last-name">Отчество:</label>
+            <input class="form__input form-last__input" type="text" name="last-name" id="last-name"
+              placeholder="Отчество, если желаете">
+          </div>
         </div>
       </fieldset>
       <fieldset class="form__fieldset form__fieldset--bg">
         <div class="container">
-          <div class="form-phone__container">
+          <div class="form__phone-container">
             <label class="form__label form-phone__label" for="telephone">Тел</label>
             <input class="form__input form-phone__input" type="tel" name="telephone" id="telephone"
               placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+            <svg class="form__phone-icon" width="24.829" height="24.333">
+              <use xlink:href="img/svg/sprite.svg#icon-phone"></use>
+            </svg>
           </div>
         </div>
       </fieldset>
@@ -129,19 +136,22 @@
             <label class="form__label form-email__label">e-mail</label>
             <input class="form__input form-email__input" type="email" name="email" id="email" placeholder="Ваш Email*"
               required>
+            <svg class="form__email-icon" width="32" height="32">
+              <use xlink:href="img/svg/sprite.svg#icon-mail"></use>
+            </svg>
           </div>
         </div>
       </fieldset>
       <fieldset class="form__fieldset">
-        <div class="container">
-          <h2 class="form__legend">Доп</h2>
+        <div class="container form__flex-container">
+          <h2 class="form__legend form__legend--mnt">Доп</h2>
           <textarea class="form__textarea" rows="5" id="textuser" name="textuser"
             placeholder="Опишите все ваши  пожелания к заказу"></textarea>
         </div>
       </fieldset>
-      <div class="container">
+      <div class="container form__submit-container">
         <span class="form__required-field">*Поля обязательны для заполнения</span>
-        <button class="form__submit">Отправить заказ</button>
+        <button class="form__submit" type="submit">Отправить заказ</button>
       </div>
     </form>
   </main>
