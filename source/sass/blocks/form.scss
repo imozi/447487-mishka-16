@@ -186,6 +186,7 @@
   margin-bottom: 21px;
   padding: 16px 16px 16px 0;
   font-size: 17px;
+  color: $greyish-brown;
   border: none;
   border-bottom: 2px solid $black;
   outline: none;
@@ -245,6 +246,7 @@
   margin-top: 5px;
   padding: 16px 16px 16px 0;
   font-size: 17px;
+  color: $greyish-brown;
   border: none;
   border-bottom: 2px solid $black;
   background-color: transparent;
@@ -276,6 +278,7 @@
   margin-top: 5px;
   padding: 16px 16px 16px 0;
   font-size: 17px;
+  color: $greyish-brown;
   border: none;
   border-bottom: 2px solid $black;
   background-color: transparent;
@@ -321,8 +324,10 @@
   min-height: 142px;
   font-size: 17px;
   line-height: 18px;
+  color: $greyish-brown;
   border: 2px solid $black;
   outline: none;
+  resize: none;
 
   &:hover,
   &:focus {
@@ -354,6 +359,18 @@
   color: $greyish-brown;
   background-color: $white;
   border: 2px solid $greyish-brown;
+  outline: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $white;
+    background-color: $greyish-brown;
+  }
+
+  &:active {
+    color: $white-30;
+  }
 }
 
 @media (min-width: $tablet-screen) {

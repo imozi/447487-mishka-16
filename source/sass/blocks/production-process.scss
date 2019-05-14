@@ -47,6 +47,11 @@
   transform: scale(1.2);
 }
 
+.process-video__play-icon:active {
+  transform: scale(0.8);
+  opacity: 0.3;
+}
+
 .production-process-container {
   width: 100%;
   padding: 20px 33px 33px;
