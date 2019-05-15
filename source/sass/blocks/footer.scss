@@ -8,13 +8,14 @@
   align-items: center;
 }
 
-.footer__logo {
+.footer__logo-link {
   display: none;
 }
 
 .footer__social {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   width: 145px;
   padding: 24px 0 21px;
@@ -22,48 +23,41 @@
 
 .footer__social-link {
   display: block;
+  outline: none;
+
+  &:hover .footer__logo-instagram,
+  &:hover .footer__logo-facebook,
+  &:hover .footer__logo-twitter,
+  &:focus .footer__logo-instagram,
+  &:focus .footer__logo-facebook,
+  &:focus .footer__logo-twitter {
+    fill: $seafoam-dark-blue-hover;
+  }
+
+  &:active .footer__logo-instagram,
+  &:active .footer__logo-facebook,
+  &:active .footer__logo-twitter {
+    opacity: 0.3;
+  }
 }
 
 .footer__logo-instagram {
   width: 21.769px;
   height: 21.334px;
-
-  &:hover,
-  &:focus {
-    fill: $seafoam-dark-blue-hover;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
+  outline: none;
 }
+
 
 .footer__logo-facebook {
   width: 14.962px;
   height: 27.718px;
-
-  &:hover,
-  &:focus {
-    fill: $seafoam-dark-blue-hover;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
+  outline: none;
 }
 
 .footer__logo-twitter {
   width: 23.494px;
   height: 20.168px;
-
-  &:hover,
-  &:focus {
-    fill: $seafoam-dark-blue-hover;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
+  outline: none;
 }
 
 .footer__developed {
@@ -76,6 +70,7 @@
 .footer__developed-link {
   display: flex;
   align-items: center;
+  outline: none;
 
   &:hover .footer__developed-logo,
   &:focus .footer__developed-logo {
@@ -105,28 +100,31 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 52px 50px;
+    padding: 45px 50px;
   }
 
-  .footer__logo {
+  .footer__logo-link {
     display: block;
+    outline: none;
 
-    &:hover,
-    &:focus {
+    &:hover .footer__logo,
+    &:focus .footer__logo {
       fill: $seafoam-dark-blue-hover;
     }
 
-    &:active {
+    &:active .footer__logo {
       opacity: 0.3;
     }
   }
 
   .footer__social {
+    margin-top: 15px;
     margin-left: 80px;
     padding: 0;
   }
 
   .footer__developed {
+    margin-top: 6px;
     padding: 0;
     border-top: none;
   }

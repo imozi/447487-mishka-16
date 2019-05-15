@@ -74,6 +74,8 @@
   text-transform: uppercase;
   color: $greyish-brown;
   border: 2px solid $greyish-brown;
+  outline: none;
+  overflow: hidden;
 
   &:hover,
   &:focus {

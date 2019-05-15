@@ -15,6 +15,7 @@
 .contacts__item__email {
   color: $greyish-brown;
   border-bottom: 1px solid $seafoam-blue;
+  outline: none;
 
   &:hover,
   &:focus {
@@ -58,6 +59,7 @@
   text-transform: uppercase;
   color: $greyish-brown;
   border: 2px solid $greyish-brown;
+  outline: none;
 
   &:hover,
   &:focus {

@@ -1,6 +1,10 @@
 var menuBtn = document.querySelector('.main-nav__toggle'),
   menuList = document.querySelectorAll('.main-nav__list'),
   map = document.querySelector('.map'),
+  addProduct = document.querySelector('.popular-product__link'),
+  bay = document.querySelectorAll('.product__link'),
+  modal = document.querySelector('.modal'),
+  modalClose = document.querySelector('.modal__overlay'),
   myMap = null;
 
 /** Влючен js **/
@@ -45,3 +49,35 @@ if (map) {
     }
   }
 }
+
+/** Модальное окно **/
+
+if (addProduct) {
+  addProduct.addEventListener('click', function (e) {
+    e.preventDefault();
+    modal.classList.add('modal--show');
+  })
+};
+
+if (bay) {
+  for (var i = 0; i < bay.length; i++) {
+    bay[i].addEventListener('click', function (e) {
+      e.preventDefault();
+      modal.classList.add('modal--show');
+    })
+  }
+}
+
+if (modalClose) {
+  modalClose.addEventListener('click', function () {
+    modal.classList.remove('modal--show');
+  })
+}
+
+window.addEventListener("keydown", function (e) {
+  if (e.keyCode === 27) {
+    if (modal.classList.contains("modal--show")) {
+      modal.classList.remove("modal--show");
+    }
+  }
+});
