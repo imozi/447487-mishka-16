@@ -1,14 +1,20 @@
 .map {
   position: relative;
-  margin-bottom: 33px;
+  margin-bottom: 42px;
+  font-size: 0;
+  height: 454px;
+  overflow: hidden;
 }
 
 .map__img {
   position: relative;
+  font-size: 0;
+  line-height: 0;
 }
 
 .map__container {
   width: 320px;
+  height: 454px;
   margin: 0 auto;
   position: relative;
 
@@ -35,11 +41,13 @@
 
 @media (min-width: $tablet-screen) {
   .map {
-    margin-bottom: 46px;
+    height: 457px;
+    margin-bottom: 56px;
   }
 
   .map__container {
     width: 768px;
+    height: 457px;
     margin: 0 auto;
     position: relative;
 

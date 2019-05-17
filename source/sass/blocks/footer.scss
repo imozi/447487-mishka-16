@@ -14,16 +14,18 @@
 
 .footer__social {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   align-items: center;
-  width: 145px;
-  padding: 24px 0 21px;
+  width: 200px;
+  padding: 27px 0 16px;
 }
 
 .footer__social-link {
   display: block;
   outline: none;
+  padding-right: 21px;
+  padding-left: 19px;
 
   &:hover .footer__logo-instagram,
   &:hover .footer__logo-facebook,
@@ -63,7 +65,7 @@
 .footer__developed {
   display: flex;
   align-items: center;
-  padding: 20px 39px 25px;
+  padding: 19px 39px 25px;
   border-top: 1px solid #e5e5e5;
 }
 
@@ -83,7 +85,7 @@
 }
 
 .footer__developed-text {
-  margin-right: 31px;
+  margin-right: 27px;
   font-size: 19px;
   font-weight: 700;
   line-height: 18px;
@@ -92,6 +94,7 @@
 
 .footer__developed-logo {
   fill: $seafoam-blue;
+  margin-top: 2px;
 }
 
 @media (min-width: $tablet-screen) {
@@ -118,13 +121,13 @@
   }
 
   .footer__social {
-    margin-top: 15px;
+    margin-top: 12px;
     margin-left: 80px;
     padding: 0;
   }
 
   .footer__developed {
-    margin-top: 6px;
+    margin-top: 2px;
     padding: 0;
     border-top: none;
   }

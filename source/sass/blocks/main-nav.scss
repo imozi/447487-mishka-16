@@ -51,14 +51,14 @@
   flex-direction: column;
 }
 
-.main-nav-fisrt {
+.main-nav__first {
   border-top: 1px solid $white-grey;
 }
 
 .main-nav__logo-link {
   display: block;
   align-self: center;
-  padding-top: 20px;
+  padding-top: 22px;
   padding-bottom: 15px;
   cursor: pointer;
   outline: none;
@@ -79,7 +79,7 @@
 
 .main-nav__toggle {
   position: absolute;
-  top: 31px;
+  top: 32px;
   right: 30px;
   width: 19.958px;
   height: 14px;
@@ -99,11 +99,11 @@
   display: flex;
 }
 
-.main-nav-second {
+.main-nav__second {
   display: none;
 }
 
-.main-nav-third__item {
+.main-nav__third-item {
   position: relative;
 }
 
@@ -152,12 +152,12 @@
     transform: translateX(-50%);
   }
 
-  .main-nav-third__item-search {
+  .main-nav__item-search {
     padding-right: 38px;
     padding-left: 44px;
   }
 
-  .main-nav-fisrt {
+  .main-nav__first {
     position: absolute;
     left: 0;
     bottom: -42px;
@@ -166,7 +166,7 @@
     border: none;
   }
 
-  .main-nav-fisrt__link {
+  .main-nav__first-link {
     padding: 0;
     margin-right: 37px;
     font-size: 15px;
@@ -178,7 +178,7 @@
     box-shadow: none;
   }
 
-  .main-nav-second {
+  .main-nav__second {
     display: none;
   }
 
@@ -186,13 +186,13 @@
     font-size: 0;
   }
 
-  .main-nav-third__item-basket {
+  .main-nav__item-basket {
     padding-top: 31px;
     padding-left: 83px;
     padding-bottom: 33px;
   }
 
-  .main-nav-third__item {
+  .main-nav__third-item {
     display: flex;
     align-items: center;
     border-left: 1px solid $white-grey;
@@ -213,7 +213,7 @@
     padding: 0;
   }
 
-  .main-nav-second {
+  .main-nav__second {
     position: absolute;
     left: 0;
     bottom: -42px;
@@ -221,29 +221,29 @@
     padding: 0;
   }
 
-  .main-nav-second__link {
+  .main-nav__second-link {
     font-size: 15px;
     line-height: 24px;
     padding: 0;
     margin-right: 62px;
   }
 
-  .main-nav-fisrt :nth-child(2) {
+  .main-nav__first :nth-child(2) {
     margin-left: 36px;
     padding-left: 34px;
     border-left: 1px solid $white-grey;
   }
 
-  .main-nav-fisrt__item {
+  .main-nav__first-item {
     padding: 31px 0 33px 0;
   }
 
-  .main-nav-fisrt__link {
+  .main-nav__first-link {
     margin: 0;
     font-size: 17px;
   }
 
-  .main-nav-fisrt {
+  .main-nav__first {
     position: static;
     order: 0;
   }
