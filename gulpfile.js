@@ -65,12 +65,12 @@ gulp.task("webp", function () {
 });
 
 gulp.task("sprite", function () {
-  return gulp.src("source/img/svg/*.svg")
+  return gulp.src("source/img/*.svg")
     .pipe(svgstore({
       inlineSvg: true
     }))
     .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("build/img/svg"));
+    .pipe(gulp.dest("build/img"));
 });
 
 gulp.task("copy", function () {
@@ -105,7 +105,7 @@ gulp.task("server", function () {
 
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
   gulp.watch("source/js/**/*.js", gulp.series("js", "refresh"));
-  gulp.watch("source/img/svg/*.svg", gulp.series("sprite", "refresh"));
+  gulp.watch("source/img/**/*.svg", gulp.series("sprite", "refresh"));
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
 });
 
