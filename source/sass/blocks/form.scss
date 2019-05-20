@@ -114,6 +114,11 @@
   &:focus::before {
     border-color: $seafoam-blue;
   }
+
+  &:active::before {
+    border-color: $greyish-brown;
+    opacity: 0.3;
+  }
 }
 
 .form__type-input--acs:focus + .form__type-accessory::before {
@@ -128,6 +133,8 @@
   display: block;
 }
 
+.form__type-input:disabled + .form__type-accessory,
+.form__type-input:disabled + .form__type-kids,
 .form__type-input:disabled + .form__type-accessory::before,
 .form__type-input:disabled + .form__type-kids::before {
   border-color: $greyish-brown;
@@ -174,6 +181,11 @@
   &:focus::before {
     border-color: $seafoam-blue;
   }
+
+  &:active::before {
+    border-color: $greyish-brown;
+    opacity: 0.3;
+  }
 }
 
 .form__color-input:focus + .form__label::before {
@@ -184,6 +196,7 @@
   display: block;
 }
 
+.form__color-input:disabled + .form__color-label,
 .form__color-input:disabled + .form__color-label::before {
   border-color: $greyish-brown;
   opacity: 0.3;
