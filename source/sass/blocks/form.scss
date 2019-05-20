@@ -531,29 +531,26 @@
     margin-bottom: 30px;
   }
 
-  .form__name-label,
-  .form__surname-label,
-  .form__last-label {
+  .form__name-label {
     display: inline;
+    margin-top: 0;
     padding-left: 2px;
     font-size: 19px;
-  }
-
-  .form__name-label {
     padding-right: 20px;
   }
 
   .form__surname-label {
+    display: inline;
+    padding-left: 2px;
+    font-size: 19px;
     padding-right: 21px;
   }
 
   .form__last-label {
+    display: inline;
+    padding-left: 2px;
+    font-size: 19px;
     padding-right: 22px;
-  }
-
-
-  .form__name-label {
-    margin-top: 0;
   }
 
   .form__name-input,
@@ -573,7 +570,7 @@
     width: 375px;
   }
 
-  .form__last-input  {
+  .form__last-input {
     width: 375px;
   }
 
