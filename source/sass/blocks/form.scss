@@ -410,12 +410,13 @@
 
   &:active {
     color: $white-30;
+    background-color: $greyish-brown;
   }
 }
 
 @media (min-width: $tablet-screen) {
   .form {
-    margin-bottom: 30px;
+    margin-bottom: 34px;
   }
 
   .form__fieldset--bg {
@@ -449,6 +450,7 @@
     margin-top: 0;
     margin-bottom: 57px;
     padding-left: 81px;
+    font-size: 19px;
 
     &::before {
       top: -16px;
@@ -468,6 +470,7 @@
     margin: 0;
     margin-bottom: 57px;
     padding-left: 81px;
+    font-size: 19px;
 
     &::before {
       top: -16px;
@@ -499,6 +502,7 @@
     width: 260px;
     padding-left: 80px;
     margin-bottom: 58px;
+    font-size: 19px;
 
     &::before {
       top: -15px;
@@ -531,8 +535,22 @@
   .form__surname-label,
   .form__last-label {
     display: inline;
+    padding-left: 2px;
+    font-size: 19px;
+  }
+
+  .form__name-label {
     padding-right: 20px;
   }
+
+  .form__surname-label {
+    padding-right: 21px;
+  }
+
+  .form__last-label {
+    padding-right: 22px;
+  }
+
 
   .form__name-label {
     margin-top: 0;
@@ -551,9 +569,12 @@
     width: 428px;
   }
 
-  .form__surname-input,
-  .form__last-input {
-    width: 376px;
+  .form__surname-input {
+    width: 375px;
+  }
+
+  .form__last-input  {
+    width: 375px;
   }
 
   .form__phone-container {
@@ -625,6 +646,10 @@
 }
 
 @media (min-width: $desktop-screen) {
+  .form {
+    margin-bottom: 31px;
+  }
+
   .form__flex-container {
     justify-content: flex-start;
     padding: 0 112px;
@@ -632,10 +657,13 @@
   }
 
   .form__legend,
-  .form-email__label,
-  .form-phone__label,
   .form__user-text {
     min-width: 111px;
+  }
+
+  .form__email-label,
+  .form__phone-label {
+    min-width: 115px;
   }
 
   .form__legend--mnt {
@@ -686,9 +714,17 @@
     padding: 0 60px;
   }
 
+  .form__phone-container {
+    margin-top: 47px;
+  }
+
   .form__phone-input,
   .form__email-input {
-    width: 705px;
+    width: 700px;
+  }
+
+  .form__phone-input {
+    padding-bottom: 12px;
   }
 
   .form__phone-icon {
@@ -697,6 +733,10 @@
 
   .form__email-icon {
     right: 179px;
+  }
+
+  .form__user-text {
+    margin-top: 0;
   }
 
   .form__textarea {

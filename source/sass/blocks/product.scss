@@ -28,7 +28,7 @@
 .product__container {
   display: flex;
   flex-direction: column;
-  padding: 18px 28px 24px 28px;
+  padding: 18px 27px 29px 27px;
 }
 
 .product__link {
@@ -50,7 +50,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 19px;
+  padding-top: 20px;
   border-top: 1px solid $white-grey;
 }
 
@@ -95,11 +95,14 @@
 
   .product__container {
     padding-top: 26px;
+    padding-right: 31px;
+    padding-bottom: 27px;
     width: 50%;
   }
 
   .product__price-container {
     margin-top: auto;
+    padding-top: 22px;
   }
 
   .product__title {
@@ -111,6 +114,7 @@
   }
 
   .product__price {
+    margin-left: 3px;
     font-size: 17px;
   }
 }
@@ -119,7 +123,7 @@
   .product {
     flex-direction: column;
     flex-basis: 315px;
-    margin-right: 49px;
+    margin-right: 52px;
     margin-bottom: 57px;
   }
 
@@ -130,10 +134,14 @@
   .product__container {
     width: auto;
     flex-grow: 1;
-    padding: 29px 32px 23px 24px;
+    padding: 27px 32px 26px 24px;
   }
 
   .product__property {
     margin-bottom: 14px;
+  }
+
+  .product__price {
+    margin: 0;
   }
 }
