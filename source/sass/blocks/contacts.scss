@@ -13,9 +13,20 @@
 }
 
 .contacts__item__email {
+  position: relative;
+  display: block;
   color: $greyish-brown;
-  border-bottom: 1px solid $seafoam-blue;
   outline: none;
+
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $seafoam-blue;
+  }
 
   &:hover,
   &:focus {
@@ -24,6 +35,7 @@
 
   &:active {
     opacity: 0.3;
+    color: $seafoam-blue;
   }
 }
 
@@ -33,7 +45,7 @@
 }
 
 .contacts__item__title {
-  padding-right: 32px;
+  padding-right: 30px;
 }
 
 .contacts__email {
@@ -69,6 +81,7 @@
 
   &:active {
     color: $white-30;
+    background-color: $greyish-brown;
   }
 }
 
@@ -81,6 +94,7 @@
     font-size: 43px;
     line-height: 50px;
     margin-top: 63px;
+    margin-left: -5px;
     margin-bottom: 50px;
 
     &::after {
@@ -88,7 +102,7 @@
       content: "";
       display: block;
       top: 50%;
-      right: 0;
+      right: 3px;
       width: 46.68px;
       height: 81.691px;
       background-image: url("../img/icon-flag.svg");
@@ -143,7 +157,7 @@
     flex-direction: column;
   }
 
-  .contacts--flex {
+  .contacts__flex {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -154,12 +168,13 @@
     width: 50%;
     margin-top: 74px;
     margin-bottom: 49px;
-    padding-left: 168px;
+    padding-left: 175px;
     font-size: 53px;
     line-height: 57px;
 
     &::after {
-      left: 64px;
+      top: 58%;
+      left: 68px;
     }
   }
 
@@ -174,6 +189,7 @@
   .contacts__write {
     margin: 0;
     margin-left: 176px;
+    padding: 15px 0 15px;
   }
 
   .contacts-wrapper {

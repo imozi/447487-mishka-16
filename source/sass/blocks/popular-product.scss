@@ -12,11 +12,12 @@
   height: 6px;
   background-image: url("../img/bg-zigzag-line.svg");
   background-repeat: repeat-x;
-  background-size: auto 6px;
+  background-size: 320px 6px;
+  background-position: 8px 0;
 }
 
 .popular-product {
-  padding-top: 25px;
+  padding-top: 26px;
   padding-bottom: 42px;
 }
 
@@ -85,12 +86,13 @@
 
   &:active {
     color: $white-30;
+    background-color: $greyish-brown;
   }
 }
 
 .popular-product__specifications {
   display: block;
-  margin-bottom: 31px;
+  margin-bottom: 30px;
   border-collapse: collapse;
 }
 
@@ -125,7 +127,7 @@
     content: "";
     position: absolute;
     display: block;
-    top: -16px;
+    top: -9px;
     left: 0;
     width: 100%;
     height: 24px;
@@ -137,12 +139,14 @@
   .popular-products::after {
     height: 17px;
     background-size: 768px 17px;
-    background-position: -15px 0;
+    background-position: -18px 0;
   }
 
   .popular-product__title {
     flex-grow: 1;
     margin: 0;
+    margin-top: -2px;
+    margin-left: -4px;
     font-size: 43px;
     line-height: 50px;
   }
@@ -150,6 +154,7 @@
   .popular-product__mark {
     display: block;
     width: 75px;
+    margin-top: 3px;
     margin-right: 25px;
     text-align: center;
     line-height: 17px;
@@ -158,7 +163,7 @@
   .popular-product__price {
     margin: 0;
     margin-bottom: 35px;
-    font-size: 19px;
+    font-size: 20px;
   }
 
   .popular-product__container {
@@ -179,20 +184,28 @@
   }
 
   .popular-product__specifications {
-    margin-bottom: 55px;
+    margin-bottom: 56px;
     font-size: 15px;
   }
 }
 
 @media (min-width: $desktop-screen) {
+  .popular-products {
+    display: flex;
+    width: 1150px;
+    margin: 0 auto;
+  }
+
   .popular-products::before {
     top: -20px;
-    background-size: 1150px 34px;
+    background-size: 1250px 34px;
+    background-position: 13px 5px;
   }
 
   .popular-products::after {
     height: 34px;
-    background-size: 1150px 24px;
+    background-size: 1050px 24px;
+    background-position: -28px 9px;
   }
 
   .popular-product {
@@ -220,14 +233,19 @@
   }
 
   .popular-product__subtitle {
-    margin-bottom: 48px;
+    margin-bottom: 50px;
   }
 
   .popular-product__specifications {
+
     margin-bottom: 110px;
   }
 
   .popular-product__picture {
     top: 74px;
+  }
+
+  .popular-product__price {
+    margin-bottom: 33px;
   }
 }
