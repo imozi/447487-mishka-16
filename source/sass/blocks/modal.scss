@@ -56,6 +56,10 @@
   border-color: $seafoam-blue;
 }
 
+.modal__form-input:disabled + .modal__form-label {
+  opacity: 0.3;
+}
+
 .modal__form-items {
   display: flex;
   justify-content: space-between;

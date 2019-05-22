@@ -137,8 +137,8 @@
 .form__type-input:disabled + .form__type-kids,
 .form__type-input:disabled + .form__type-accessory::before,
 .form__type-input:disabled + .form__type-kids::before {
-  border-color: $greyish-brown;
-  opacity: 0.3;
+  border-color: $greyish-brown-10;
+  opacity: 0.1;
 }
 
 .form__color-container {
