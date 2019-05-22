@@ -42,27 +42,27 @@
   color: $black;
 }
 
-.modal-form {
+.modal__form {
   display: flex;
   flex-direction: column;
 }
 
-.modal-form__title {
+.modal__form-title {
   margin-bottom: 28px;
   text-align: center;
 }
 
-.modal-form__input:checked + .modal-form__label {
+.modal__form-input:checked + .modal__form-label {
   border-color: $seafoam-blue;
 }
 
-.modal-form__items {
+.modal__form-items {
   display: flex;
   justify-content: space-between;
   margin-bottom: 31px;
 }
 
-.modal-form__label {
+.modal__form-label {
   display: block;
   width: 82px;
   height: 52px;
@@ -81,7 +81,7 @@
 }
 
 
-.modal-form__submit {
+.modal__form-submit {
   width: 260px;
   padding: 14px 0;
   font-size: 17px;
@@ -105,11 +105,11 @@
     line-height: 57px;
   }
 
-  .modal-form__label {
+  .modal__form-label {
     width: 112px;
   }
 
-  .modal-form__submit {
+  .modal__form-submit {
     width: 350px;
     padding: 18px 0;
   }
