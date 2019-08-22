@@ -44,7 +44,7 @@ if (map) {
         });
       myMap.geoObjects.add(myPlacemark);
 
-      var styleMap = document.querySelector('.ymaps-2-1-73-map');
+      var styleMap = document.querySelector('.map ymaps');
       styleMap.classList.add('map__ya');
       styleMap.style.position = 'absolute';
     }
