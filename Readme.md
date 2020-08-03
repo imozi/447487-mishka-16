@@ -10,4 +10,4 @@
 `npm start`
 
 ### Предварительный просмотр готовой верстки
-[Верстка](https://imozi.github.io/447487-mishka-16/build/)
+[Верстка](imozi.github.io/mishka/build)
